@@ -1,0 +1,8 @@
+# Ruby
+Gemfile.lock
+
+# OSX
+.DS_Store
+
+# Build
+dist/
