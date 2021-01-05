@@ -31,7 +31,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  carminoplata
 
 # Source directory
-source: src
+#source: src
 
 exclude:
   - node_modules/
