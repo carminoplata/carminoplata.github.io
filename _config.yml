@@ -26,8 +26,8 @@ logo: assets/images/logo.png
 #[""true" or "false" to indicate whether to provide a download URL]"
 show_downloads: "true"
 #google_analytics: [Your Google Analytics tracking ID]
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://carminoplata.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  carminoplata
 
 # Source directory
