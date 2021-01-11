@@ -7,6 +7,12 @@ Gemfile.lock
 # Jekyll
 _site
 .sass-cache
+.asset-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# React
+assets/js/bundle.js
+node_modules
+public

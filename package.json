@@ -1,0 +1,42 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Carmine Sacco's Professional Page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carminoplata/carminoplata.github.io.git"
+  },
+  "keywords": [
+    "Carmine",
+    "Sacco",
+    "Software",
+    "Engineer",
+    "Startupper",
+    "Innovation",
+    "AI"
+  ],
+  "author": "Carmine Sacco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carminoplata/carminoplata.github.io/issues"
+  },
+  "homepage": "https://carminoplata.github.io",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1"
+  }
+}
