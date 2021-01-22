@@ -1,7 +1,2 @@
----
----
-@import "{{ site.theme }}";
-
-.downloads{
-  width: max-content;
-}
+@import "mixin.scss";
+@import "navbar.scss";

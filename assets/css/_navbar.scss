@@ -1,0 +1,85 @@
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #212529;
+
+  .navbar-toggler {
+    @include navbar-font;
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    color: #fff;
+    //text-transform: uppercase;
+    background-color: #fed136;
+    border: 0;
+  }
+
+  .navbar-brand {
+    @include navbar-font;
+    color: #fed136;
+    font-weight: 700;
+    letter-spacing: 0.0625em;
+    //text-transform: uppercase;
+
+    img{
+      height: 1.5rem;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      @include navbar-font;
+      font-size: 1.5rem;
+      color: #000000;
+      letter-spacing: 0.0625em;
+      
+    }
+
+    .nav-link.active, .nav-link:hover{
+      color: #fed136;
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+
+    .navbar-brand {
+      font-size: 1.5em;
+      transition: font-size 0.3s ease-in-out;
+      
+      img{
+        // rem is relative to font-size in html (default 1rem = 16px)
+        // em is relative to font-size of element on which it is applied
+        height: 3em;
+        transition: height 0.3s ease-in-out;
+      }
+    }
+    .navbar-shrink {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #212529;
+
+      .navbar-brand {
+        font-size: 1.25em;
+
+        svg, img{
+          height: 1.5rem;
+        }
+      }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        margin-right: 1rem;
+      }
+      .nav-link:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  
+}

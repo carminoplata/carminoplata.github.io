@@ -47,6 +47,7 @@ exclude:
   - .jekyll-cache/
   - Gemfile
   - node_modules/
+  - assets/css/*.scss
 
 assets:
   source_maps: true

@@ -1,7 +1,8 @@
 import React from 'react';
-import ReactDOM, { render } from 'react-dom';
+import { render } from 'react-dom';
 //import './index.css';
-import App from './components/App';
+import Navigation from './components/Navigation';
+import 'bootstrap/dist/css/bootstrap.min.css';
 //import reportWebVitals from './reportWebVitals';
 /* 
 ReactDOM.render(
@@ -11,8 +12,11 @@ ReactDOM.render(
   document.getElementById('root')
 );
 */
+
+
 console.log('Hello World');
-render(<App message="Welcome" />, document.getElementById('root'))
+render(<Navigation collapseOnSelect={true} logo="assets/images/smartBulb.svg"/>, 
+        document.getElementById('root'))
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

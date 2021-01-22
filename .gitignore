@@ -16,3 +16,6 @@ vendor
 assets/js/bundle.js
 node_modules
 public
+
+# Sass
+assets/css/style.css*
