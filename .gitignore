@@ -14,6 +14,7 @@ vendor
 
 # React
 assets/js/bundle.js
+assets/js/index.js
 node_modules
 public
 

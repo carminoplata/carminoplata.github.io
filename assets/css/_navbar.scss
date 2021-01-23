@@ -3,6 +3,17 @@
   padding-bottom: 1rem;
   background-color: #212529;
 
+  .rowNav{
+    width: 100%;
+
+    .colNav{
+      display: flex;
+      
+      .navItem{
+        margin: auto;
+      }
+    }
+  }
   .navbar-toggler {
     @include navbar-font;
     padding: 0.75rem;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Nav, Navbar} from 'react-bootstrap';
+import {Col, Container, Nav, Navbar, Row} from 'react-bootstrap';
 
 
 function Navigation(props){
@@ -7,27 +7,43 @@ function Navigation(props){
   return <>
           <Navbar collapseOnSelect={props.collapseOnSelect} bg="white" fixed="top" 
             expand="lg" id="mainNav">
-            <Container>
-              <Navbar.Brand href="#page-top">
-                <img className="d-inline-block align-top" src={props.logo} alt=""/>
-              </Navbar.Brand>
-              <Navbar.Toggle label={props.menu} aria-controls="navbarResponsive"/>
-              <Navbar.Collapse id="navbarResponsive">
-                <Nav className="ml-auto">
-                  <Nav.Link className="js-scroll-trigger" href="#about">
-                    About
-                  </Nav.Link>
-                  <Nav.Link className="js-scroll-trigger" href="#portfolio">
-                    Portfolio
-                  </Nav.Link>
-                  <Nav.Link className="js-scroll-trigger" href="#hobbies">
-                    Hobbies &amp; Fun
-                  </Nav.Link>
-                  <Nav.Link href="#writeme">
-                    Write Me
-                  </Nav.Link>
-                </Nav>
-              </Navbar.Collapse> 
+            <Container fluid={true}>
+              <Row className="rowNav">
+                <Col xs={6} md={6} lg={2} className="colNav">
+                  <Navbar.Brand href="#page-top" className="navItem">
+                    <img className="d-inline-block align-top" src={props.logo} alt=""/>
+                  </Navbar.Brand>
+                </Col>
+                <Col xs={6} md={6} lg className="colNav">
+                  <Navbar.Toggle label={props.menu} aria-controls="navbarResponsive"/>
+                  <Navbar.Collapse id="navbarResponsive" className="navItem">
+                    <Col xs={12} md={8} lg={8}>
+                      <Nav className="justify-content-center ml-auto">
+                        <Nav.Link className="js-scroll-trigger" href="#about">
+                          About
+                        </Nav.Link>
+                        <Nav.Link className="js-scroll-trigger" href="#portfolio">
+                          Portfolio
+                        </Nav.Link>
+                        <Nav.Link className="js-scroll-trigger" href="#hobbies">
+                          Hobbies &amp; Fun
+                        </Nav.Link>
+                        <Nav.Link href="#writeme">
+                          Write Me
+                        </Nav.Link>
+                      </Nav>
+                    </Col>
+                    <Col xs={12} md={4} lg>
+                      <Nav className="justify-content-end">
+                        <p>Linkedin</p>
+                        <p>Instagram</p>
+                        <p>Github</p>
+                      </Nav>
+                    </Col>
+                    
+                  </Navbar.Collapse>
+                </Col>
+              </Row>
             </Container>
           </Navbar>
           <header class="masthead">
