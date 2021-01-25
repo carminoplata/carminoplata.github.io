@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col, Container, Nav, Navbar, Row} from 'react-bootstrap';
-
+import Social from './Social';
 
 function Navigation(props){
   console.log("App Hello World!")
@@ -29,15 +29,13 @@ function Navigation(props){
                           Hobbies &amp; Fun
                         </Nav.Link>
                         <Nav.Link href="#writeme">
-                          Write Me
+                          Get In Touch
                         </Nav.Link>
                       </Nav>
                     </Col>
                     <Col xs={12} md={4} lg>
                       <Nav className="justify-content-end">
-                        <p>Linkedin</p>
-                        <p>Instagram</p>
-                        <p>Github</p>
+                        <Social />
                       </Nav>
                     </Col>
                     

@@ -1,0 +1,30 @@
+.social_list{
+  list-style-type: none;
+  display: inherit;
+  margin: auto;
+
+  .social {
+    transition: transform 250ms;
+    padding: 7px;
+  }
+
+  .social:hover {
+    transform: translateY(-2px);
+  }
+
+  .linkedin{
+    color: #0a66c2;
+  }
+
+  .instagram{
+    //color: black;
+    color: #e45a4ced;
+  }
+  .facebook{
+    color: #4968ad;
+  }
+
+  .github{
+    color: black;
+  }
+}
