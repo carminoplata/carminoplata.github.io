@@ -3,6 +3,158 @@
   padding-bottom: 1rem;
   background-color: #212529;
 
+  .nav-container{
+    max-width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    .nav-brand{
+      -webkit-box-ordinal-group: 0;
+      -webkit-order: -1;
+      -ms-flex-order: -1;
+      order: -1;
+      position: relative;
+      float: left;
+      text-decoration: none;
+    }
+    
+    .navbar-brand {
+      @include navbar-font;
+      color: #fed136;
+      font-weight: 700;
+      letter-spacing: 0.0625em;
+      //text-transform: uppercase;
+  
+      img{
+        height: 3rem;
+      }
+    }
+
+    .social-wrapper{
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1;
+      display: inline;
+    }
+
+    .nav-menu{
+      transform: translateX(0px) translateY(0px);
+      float: none;
+      position: relative;
+
+      .nav-menu-social{
+        display: none;
+      }
+    }
+
+    .navbar-toggler {
+      @include navbar-font;
+      padding: 0.75rem;
+      font-size: 1.4rem;
+      color: #fff;
+      //text-transform: uppercase;
+      border: 0;
+      position: relative;
+      float: right;
+      //padding: 18px;
+      //font-size: 24px;
+      display: none;
+      cursor: pointer;
+      background: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);      
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .navbar-toggler:focus{
+      outline: none;
+    }
+
+    @media (min-width: 1200px) {
+      .nav-menu{
+        margin-left: 200px!important;
+      }
+    }
+
+    @media (min-width: 1100px) and (max-width: 1199px){
+      .nav-menu{
+        margin-left: 100px!important;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1099px){
+      .nav-menu{
+        margin-left: 60px!important;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .navbar-toggler{
+        padding: 0px;
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+        display: block;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .social-wrapper{
+        display: none;
+      }
+    }
+
+    @media (max-width: 991px) {
+      border: none;
+      background-color: transparent;
+      transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  
+      .navbar-brand {
+        font-size: 1.5em;
+        transition: font-size 0.3s ease-in-out;
+        
+        img{
+          // rem is relative to font-size in html (default 1rem = 16px)
+          // em is relative to font-size of element on which it is applied
+          //height: 3em;
+          transition: height 0.3s ease-in-out;
+        }
+      }
+      .navbar-shrink {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: #212529;
+  
+        .navbar-brand {
+          font-size: 1.25em;
+  
+          svg, img{
+            height: 1.5rem;
+          }
+        }
+      }
+  
+      .navbar-nav {
+        .nav-link {
+          margin-right: 1rem;
+        }
+        .nav-link:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .justify-content-end{
+    display: none;
+  }
+
   .rowNav{
     width: 100%;
 
@@ -14,27 +166,9 @@
       }
     }
   }
-  .navbar-toggler {
-    @include navbar-font;
-    padding: 0.75rem;
-    font-size: 0.75rem;
-    color: #fff;
-    //text-transform: uppercase;
-    background-color: #fed136;
-    border: 0;
-  }
+  
 
-  .navbar-brand {
-    @include navbar-font;
-    color: #fed136;
-    font-weight: 700;
-    letter-spacing: 0.0625em;
-    //text-transform: uppercase;
-
-    img{
-      height: 1.5rem;
-    }
-  }
+  
 
   .navbar-nav {
     .nav-link {
@@ -50,47 +184,7 @@
     }
   }
 
-  @media (min-width: 992px) {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    border: none;
-    background-color: transparent;
-    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
 
-    .navbar-brand {
-      font-size: 1.5em;
-      transition: font-size 0.3s ease-in-out;
-      
-      img{
-        // rem is relative to font-size in html (default 1rem = 16px)
-        // em is relative to font-size of element on which it is applied
-        height: 3em;
-        transition: height 0.3s ease-in-out;
-      }
-    }
-    .navbar-shrink {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      background-color: #212529;
-
-      .navbar-brand {
-        font-size: 1.25em;
-
-        svg, img{
-          height: 1.5rem;
-        }
-      }
-    }
-
-    .navbar-nav {
-      .nav-link {
-        margin-right: 1rem;
-      }
-      .nav-link:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 
   
 }

@@ -7,41 +7,33 @@ function Navigation(props){
   return <>
           <Navbar collapseOnSelect={props.collapseOnSelect} bg="white" fixed="top" 
             expand="lg" id="mainNav">
-            <Container fluid={true}>
-              <Row className="rowNav">
-                <Col xs={6} md={6} lg={2} className="colNav">
-                  <Navbar.Brand href="#page-top" className="navItem">
-                    <img className="d-inline-block align-top" src={props.logo} alt=""/>
-                  </Navbar.Brand>
-                </Col>
-                <Col xs={6} md={6} lg className="colNav">
-                  <Navbar.Toggle label={props.menu} aria-controls="navbarResponsive"/>
-                  <Navbar.Collapse id="navbarResponsive" className="navItem">
-                    <Col xs={12} md={8} lg={8}>
-                      <Nav className="justify-content-center ml-auto">
-                        <Nav.Link className="js-scroll-trigger" href="#about">
-                          About
-                        </Nav.Link>
-                        <Nav.Link className="js-scroll-trigger" href="#portfolio">
-                          Portfolio
-                        </Nav.Link>
-                        <Nav.Link className="js-scroll-trigger" href="#hobbies">
-                          Hobbies &amp; Fun
-                        </Nav.Link>
-                        <Nav.Link href="#writeme">
-                          Get In Touch
-                        </Nav.Link>
-                      </Nav>
-                    </Col>
-                    <Col xs={12} md={4} lg>
-                      <Nav className="justify-content-end">
-                        <Social />
-                      </Nav>
-                    </Col>
-                    
-                  </Navbar.Collapse>
-                </Col>
-              </Row>
+            <Container className="nav-container" fluid={true}>
+              <Navbar.Brand href="#page-top" className="navItem nav-brand">
+                <img className="d-inline-block align-top" src={props.logo} alt=""/>
+              </Navbar.Brand>
+              <div className="social-wrapper">
+                <Social />
+              </div>
+              <Navbar.Toggle label={props.menu} aria-controls="navbarResponsive"/>
+              <Navbar.Collapse id="navbarResponsive" className="navItem">
+                <Nav className="nav-menu">
+                  <Nav.Link className="js-scroll-trigger" href="#about">
+                    About
+                  </Nav.Link>
+                  <Nav.Link className="js-scroll-trigger" href="#portfolio">
+                    Portfolio
+                  </Nav.Link>
+                  <Nav.Link className="js-scroll-trigger" href="#hobbies">
+                    Hobbies &amp; Fun
+                  </Nav.Link>
+                  <Nav.Link href="#writeme">
+                    Get In Touch
+                  </Nav.Link>
+                  <div className="nav-menu-social social-wrapper">
+                    <Social />
+                  </div>
+                </Nav>
+              </Navbar.Collapse>
             </Container>
           </Navbar>
           <header class="masthead">
