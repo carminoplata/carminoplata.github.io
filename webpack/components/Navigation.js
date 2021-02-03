@@ -1,7 +1,9 @@
 import React from 'react';
-import {Col, Container, Nav, Navbar, Row} from 'react-bootstrap';
+import {Container, Nav, Navbar} from 'react-bootstrap';
 import Social from './Social';
 
+// Using Navbar fixed at top it don't has got the space where it is located.
+// If you want to make that space busy set position = relative but the navbar won't scroll with the page
 function Navigation(props){
   console.log("App Hello World!")
   return <>
@@ -36,18 +38,6 @@ function Navigation(props){
               </Navbar.Collapse>
             </Container>
           </Navbar>
-          <header class="masthead">
-            <div class="container">
-              <div class="masthead-subheading">Welcome To Our Studio!</div>
-              <div class="masthead-heading text-uppercase">
-                It's Nice To Meet You
-                </div>
-              <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" 
-                href="#services">
-                Tell Me More
-              </a>
-            </div>
-          </header>
         </>;   
 }
 

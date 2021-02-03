@@ -1,3 +1,10 @@
 @mixin navbar-font {
   font-family: Yellowtail, -apple-system, BlinkMacSystemFont, "Open Sans", "MontSerrat", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+@mixin header-font {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-size: 2.5rem;
+  line-height: 44px;
+  font-weight: 700;
+}

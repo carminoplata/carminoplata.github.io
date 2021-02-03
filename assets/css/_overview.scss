@@ -1,0 +1,51 @@
+.overview{
+  display: flex;
+  //max-width: 1200px;
+  // margin are useless here  
+  //margin-right: auto;
+  //margin-left: auto;
+  padding-top: 6rem;
+  flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  text-decoration: none;
+
+  .container-port{
+    padding: 2rem;
+
+    .description{
+      padding: 4rem;
+
+      .heading{
+        @include header-font;
+        color: #427C52;
+      }
+
+      .desc{
+        color: #352d2d;
+        //font-family: 'Roboto';
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        line-height: 32px;
+        font-weight: 400;
+        font-family: 'Numans',emoji;
+      }
+      .true-button{
+        background-color: #9A2526;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 21px;
+        font-family: 'Numans',emoji;
+      }
+    }
+
+    .foto{
+      margin: 0 auto;
+      display: block;
+      height: 55vmin;
+    }
+  }
+}
