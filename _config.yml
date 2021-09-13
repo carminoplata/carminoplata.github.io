@@ -31,11 +31,12 @@ url: "http://carminoplata.github.io" # the base hostname & protocol for your sit
 github_username:  carminoplata
 
 # Source directory
-#source: src
-
-exclude:
-  - node_modules/
-  - README.md
+#source: dist
+# github configurations check https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll
+lsi: false #Produce an index for related posts. 
+# Disables incremental build ==> builds only posts and pages which are changed
+incremental: false
+highlighter: rouge
 
 # Build settings
 theme: jekyll-theme-minimal
@@ -46,8 +47,15 @@ exclude:
   - .sass_cache/
   - .jekyll-cache/
   - Gemfile
+  - README.md
   - node_modules/
   - assets/css/*.scss
+  - webpack/
+  - webpack.config.js
+  - package-lock.json
+  - package.json
+  - babel.config.json
+  - _posts/
 
 assets:
   source_maps: true

@@ -4,7 +4,7 @@
   background-color: #212529;
 
   .nav-container{
-    max-width: 1200px;
+    //max-width: 1200px;
     padding-left: 32px;
     padding-right: 32px;
     margin-left: 0px;
@@ -44,6 +44,7 @@
       transform: translateX(0px) translateY(0px);
       float: none;
       position: relative;
+      display: none;
 
       .nav-menu-social{
         display: none;
@@ -91,6 +92,10 @@
       .nav-menu{
         margin-left: 60px!important;
       }
+      #navbarResponsive {
+        display: none;
+      }
+      
     }
 
     @media (max-width: 991px) {
@@ -171,9 +176,6 @@
     }
   }
   
-
-  
-
   .navbar-nav {
     .nav-link {
       @include navbar-font;

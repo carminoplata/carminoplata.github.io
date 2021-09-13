@@ -13,8 +13,7 @@ _site
 vendor
 
 # React
-assets/js/bundle.js
-assets/js/index.js
+assets/js/*
 node_modules
 public
 
