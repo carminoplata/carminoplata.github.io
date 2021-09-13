@@ -7,7 +7,7 @@ import Social from './Social';
 function Navigation(props){
   console.log("App Hello World!")
   return <>
-          <Navbar collapseOnSelect={props.collapseOnSelect} bg="white" fixed="top" 
+          <Navbar collapseOnSelect={props.collapseOnSelect} fixed="top" 
             expand="lg" id="mainNav">
             <Container className="nav-container" fluid={true}>
               <Navbar.Brand href="#page-top" className="navItem nav-brand">
