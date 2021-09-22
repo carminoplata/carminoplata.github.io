@@ -19,7 +19,7 @@ function Overview(){
                   </div>
                   <div className="button-3d-wrapper">
                     <div className="button-shadow"></div>
-                    <Button className="true-button" href="#contact">
+                    <Button className="true-button" href="mailto:carmine.sacco91@icloud.com">
                       Get in touch
                     </Button>
                   </div>

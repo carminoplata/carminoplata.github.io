@@ -16,7 +16,7 @@ ReactDOM.render(
 
 function Portfolio(){
   return <>
-          <Navigation collapseOnSelect={true} logo="assets/images/smartBulb.svg"/>
+          <Navigation collapseOnSelect={true} logo="assets/images/LogoPortfolio.svg"/>
           <Overview />
         </>;
 }
