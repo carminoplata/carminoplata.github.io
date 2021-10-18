@@ -1,7 +1,6 @@
 import React from 'react';
 import {Container, Col, Row, Button} from 'react-bootstrap';
 
-
 function Overview(){
   console.log("Show Carmine Sacco!")
   return <header className="overview">
@@ -17,11 +16,19 @@ function Overview(){
                     to innovate and create new ideas. <br/>
                     My motto is: <em>"If you can dream it, I can make it happen"</em>
                   </div>
-                  <div className="button-3d-wrapper">
-                    <div className="button-shadow"></div>
-                    <Button className="true-button" href="mailto:carmine.sacco91@icloud.com">
-                      Get in touch
-                    </Button>
+                  <div id="buttons-group">
+                    <div className="button-3d-wrapper" id="btn-get-in-touch">
+                      <div className="button-shadow"></div>
+                      <Button className="true-button" href="mailto:carmine.sacco91@icloud.com">
+                        Get in touch
+                      </Button>
+                    </div>
+                    <div className="button-3d-wrapper" id="btn-resume">
+                      <div className="button-shadow"></div>
+                      <Button className="true-button" href="assets/docs/Resume.pdf">
+                        Get my Resume
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </Col>

@@ -32,6 +32,20 @@
         font-weight: 400;
         font-family: 'Numans',emoji;
       }
+      
+      #buttons-group{
+        width: max-content;
+
+        #btn-get-in-touch{
+          float: left;
+          padding-right: 10px;
+        }
+
+        #btn-resume{
+          float: right;
+        }
+      }
+      
       .true-button{
         background-color: #ec9a01;
         border: none;

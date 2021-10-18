@@ -51,8 +51,8 @@ module.exports = {
         ],
       },*/
       {
-        // Regex to detect images files
-        test: /\.(png|svg|jpg|gif)$/,
+        // Regex to detect images and pdf files
+        test: /\.(png|svg|jpg|gif|pdf)$/,
         use: [
           'file-loader',
         ]
