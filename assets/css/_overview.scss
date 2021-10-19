@@ -12,10 +12,12 @@
   text-decoration: none;
 
   .container-port{
-    padding: 5rem 2rem 2rem 2rem;
+    padding: 3rem 2rem 2rem 2rem;
 
     .description{
-      padding: 4rem;
+      padding-top: 3rem;
+      padding-left: 4rem;
+      padding-bottom: 4rem;
 
       .heading{
         @include header-font;
@@ -62,5 +64,28 @@
       display: block;
       height: 55vmin;
     }
+
+    #col-logo{
+      padding-left: 0px;
+
+      #logo-containers{
+        padding-left: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 50%;
+
+        .logo{
+          width: 30%;
+        }
+
+        #teoresi{
+          .logo{
+            fill: #0071a5;
+          }
+        }
+      }
+    }
+    
   }
 }

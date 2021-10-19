@@ -38,9 +38,52 @@ function Overview(){
                 </div>
               </Col>
             </Row>
+            <Row>
+              <Col id="col-logo">
+                <div id="logo-containers">
+                  <div id="cpp">
+                     <img width="64" alt="C++ Logo" 
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/64px-ISO_C%2B%2B_Logo.svg.png"/>          
+                  </div>
+                  <div id="python">
+                    <img width="64" alt="Python Logo" 
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/64px-Python-logo-notext.svg.png"/>       
+                  </div>
+                  <div id="javascript">
+                    <img width="64" alt="JavaScript Logo" 
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/64px-Unofficial_JavaScript_logo_2.svg.png"/>
+                  </div>
+                  <div id="qt">
+                    <img width="64" alt="Qt Logo" 
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/64px-Qt_logo_2016.svg.png"/>
+                  </div>
+                  <div id="react">
+                    <img width="64" alt="React Logo"
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/128px-React-icon.svg.png"/>
+                  </div>
+                  <div id="git">
+                    <img width="64" alt="Git Logo" 
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/64px-Git_icon.svg.png"/>
+                  </div>
+                </div>
+              </Col>
+            </Row>
           </Container>
         </header>;
 }
 
 
 export default Overview;
+
+/*<div id="logo-containers">
+                  <div id="teoresi">
+                    <img className="logo" alt="Teoresi spa" src="assets/images/teoresi.svg"/>
+                  </div>
+                  <div id="magnetimarelli">
+                    <img className="logo" alt="Magneti Marelli spa" src="assets/images/magnetimarelli.png"/>
+                  </div>
+                  <div id="honeywell">
+                    <img className="logo" alt="Honeywell International sro" 
+                         src="assets/images/honeywell.png"/>
+                  </div>
+                </div>*/
