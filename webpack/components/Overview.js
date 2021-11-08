@@ -47,11 +47,11 @@ function Overview(){
                   </div>
                   <div id="python">
                     <img width="64" alt="Python Logo" 
-                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/64px-Python-logo-notext.svg.png"/>       
+                         src="assets/images/python.png"/>       
                   </div>
                   <div id="javascript">
                     <img width="64" alt="JavaScript Logo" 
-                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/64px-Unofficial_JavaScript_logo_2.svg.png"/>
+                         src="assets/images/javascript.png"/>
                   </div>
                   <div id="qt">
                     <img width="64" alt="Qt Logo" 
@@ -59,11 +59,11 @@ function Overview(){
                   </div>
                   <div id="react">
                     <img width="64" alt="React Logo"
-                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/128px-React-icon.svg.png"/>
+                         src="assets/images/react.jpg"/>
                   </div>
                   <div id="git">
                     <img width="64" alt="Git Logo" 
-                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/64px-Git_icon.svg.png"/>
+                         src="assets/images/git.png"/>
                   </div>
                 </div>
               </Col>
