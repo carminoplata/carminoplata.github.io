@@ -34,7 +34,7 @@ function Overview(){
               </Col>
               <Col className="foto">
                 <div className="foto-wrapper">
-                  <img className="foto" src="assets/images/mypicture.svg" alt=''/>
+                  <img className="foto" src="assets/images/picture.svg" alt=''/>
                 </div>
               </Col>
             </Row>
