@@ -59,7 +59,7 @@ function Overview(){
                   </div>
                   <div id="react">
                     <img width="64" alt="React Logo"
-                         src="assets/images/react.jpg"/>
+                         src="assets/images/react.png"/>
                   </div>
                   <div id="git">
                     <img width="64" alt="Git Logo" 
