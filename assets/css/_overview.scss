@@ -89,3 +89,9 @@
     
   }
 }
+
+@media (max-width:479px) {
+  .overview{
+    width: fit-content;
+  }
+}
