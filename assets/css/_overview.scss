@@ -1,5 +1,6 @@
 .overview{
   display: flex;
+  width: 100vw;
   //max-width: 1200px;
   // margin are useless here  
   //margin-right: auto;
@@ -36,16 +37,18 @@
       }
       
       #buttons-group{
-        width: max-content;
+        width: 100vmin;
+        display: flex;
 
         #btn-get-in-touch{
-          float: left;
+          //float: left;
+          padding-left: 10px;
           padding-right: 10px;
         }
 
-        #btn-resume{
-          float: right;
-        }
+        /*#btn-resume{
+          //float: right;
+        }*/
       }
       
       .true-button{
@@ -74,8 +77,8 @@
         align-items: center;
         justify-content: space-between;
         max-width: 50%;
-
-        .logo{
+        
+        /*.logo{
           width: 30%;
         }
 
@@ -83,7 +86,10 @@
           .logo{
             fill: #0071a5;
           }
-        }
+        }*/
+      }
+      img{
+        width: 64px;
       }
     }
     
@@ -91,7 +97,50 @@
 }
 
 @media (max-width:479px) {
-  .overview{
-    width: fit-content;
+  .overview .container-port{
+    #presentation{
+      flex-direction: column;
+      .description{
+        padding-left: 0rem;
+        padding-right: 0rem;
+        order: 2;
+        .heading{
+          font-size: 1.8rem;
+        }
+        .desc{
+          text-align: justify;
+        }
+
+        #buttons-group{
+          align-items: center;
+          //width: 100vw;
+          margin: auto;
+          /*#btn-resume{
+            margin-top: 2rem;
+          }*/
+        }
+        .true-button{
+          font-size: 20px;
+        }
+      }
+    }
+    #col-logo {
+      padding: 0rem;
+      #logo-containers{
+        padding-left: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100vw;
+        margin: auto;
+        .logo-dev{
+          margin-right: 10px;
+        }
+      }
+      img{
+        width: 32px;
+      }
+    }
   }
 }
+    

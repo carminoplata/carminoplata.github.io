@@ -5,7 +5,7 @@ function Overview(){
   console.log("Show Carmine Sacco!")
   return <header className="overview">
           <Container className="container-port" fluid={true}>
-            <Row>
+            <Row id="presentation">
               <Col className="description">
                 <div className="desc-wrapper">
                   <h1 className="heading">
@@ -41,28 +41,28 @@ function Overview(){
             <Row>
               <Col id="col-logo">
                 <div id="logo-containers">
-                  <div id="cpp">
-                     <img width="64" alt="C++ Logo" 
+                  <div id="cpp" className="logo-dev">
+                     <img alt="C++ Logo" 
                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/64px-ISO_C%2B%2B_Logo.svg.png"/>          
                   </div>
-                  <div id="python">
-                    <img width="64" alt="Python Logo" 
+                  <div id="python" className="logo-dev">
+                    <img alt="Python Logo" 
                          src="assets/images/python.png"/>       
                   </div>
-                  <div id="javascript">
-                    <img width="64" alt="JavaScript Logo" 
+                  <div id="javascript" className="logo-dev">
+                    <img alt="JavaScript Logo" 
                          src="assets/images/javascript.png"/>
                   </div>
-                  <div id="qt">
-                    <img width="64" alt="Qt Logo" 
+                  <div id="qt" className="logo-dev">
+                    <img alt="Qt Logo" 
                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/64px-Qt_logo_2016.svg.png"/>
                   </div>
-                  <div id="react">
-                    <img width="64" alt="React Logo"
+                  <div id="react" className="logo-dev">
+                    <img alt="React Logo"
                          src="assets/images/react.png"/>
                   </div>
                   <div id="git">
-                    <img width="64" alt="Git Logo" 
+                    <img alt="Git Logo" 
                          src="assets/images/git.png"/>
                   </div>
                 </div>
