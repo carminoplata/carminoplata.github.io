@@ -146,7 +146,7 @@
       img{
         // rem is relative to font-size in html (default 1rem = 16px)
         // em is relative to font-size of element on which it is applied
-        //height: 3em;
+        height: 4rem;
         transition: height 0.3s ease-in-out;
       }
     }
@@ -157,11 +157,11 @@
       -webkit-order: 1;
       -ms-flex-order: 1;
       order: 1;
-      display: block;
+      display: none;
     }
 
     .social-wrapper{
-      padding-top: 1rem;
+      margin-right: 3rem;
     }
     .navbar-shrink {
       padding-top: 1rem;

@@ -96,6 +96,27 @@
   }
 }
 
+@media (max-width:991px){
+  .overview .container-port {
+    .description {
+      .heading{
+        font-size: 2.2rem;
+      }
+      #buttons-group #btn-get-in-touch{
+        padding-left: 0rem;
+      }
+    }
+    #col-logo{
+      #logo-containers{
+        max-width: 80vw;
+      }
+      img{
+        width: 48px;
+      }
+    }
+  }
+}
+
 @media (max-width:479px) {
   .overview .container-port{
     #presentation{
