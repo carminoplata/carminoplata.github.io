@@ -98,21 +98,18 @@
 
 @media screen and (min-width: 1920px){
   .overview .container-port {
-    .row{
-      margin-top: 7rem;
-    }
     .description {
       .heading{
         font-size: 3.5rem;
       }
       .desc{
-        font-size: 2.2rem;
+        font-size: 2rem;
         line-height: 64px;
       }
       #buttons-group {
         margin-top: 3rem;
         #btn-get-in-touch{
-          padding-left: 10rem;
+          padding-left: 0rem;
           padding-right: 10rem;
         }
       }
@@ -121,9 +118,7 @@
         width: max-content;
       }
     }
-    .foto{
-      height: 65vmin;
-    }
+
     #col-logo img{
       width: 104px;
     }
