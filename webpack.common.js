@@ -2,26 +2,18 @@ const path = require('path');
 //const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  // Chosen mode tells webpack to use its built-in optimizations accordingly.
-  mode: "development", // "production" | "development" | "none"
   // webpack folder’s entry js — excluded from jekll’s build process.
   // Multiple entry
   entry:'./webpack/index.js', /*{
     index: './webpack/index.js',
     navbar: './webpack/components/Navbar.js'
   },*/
-  // HtmlWebpackPlugin will generate an index.html useful to publish the website on
-  // Github Pages
-  /*plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Carmine Sacco - Portfolio'
-    })
-  ],*/
   // we’re going to put the generated file in the assets folder so 
   // jekyll will grab it.
   output: {
     path: path.resolve(__dirname, 'assets/js'),
-    filename: "index.js"
+    filename: "index.js",
+    clean: true
   },
   /*optimization: {
     splitChunks: {
