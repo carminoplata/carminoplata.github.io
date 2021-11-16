@@ -1,0 +1,21 @@
+# Ruby
+Gemfile.lock
+
+# OSX
+.DS_Store
+
+# Jekyll
+_site
+.sass-cache
+.asset-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# React
+assets/js/*
+node_modules
+public
+
+# Sass
+assets/css/style.css*

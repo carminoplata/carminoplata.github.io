@@ -1,0 +1,218 @@
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem; // rem means root element. it's computing the size using the size of the root (window / html element)
+  width: 100vw; // vw means viewport (it's adapting at the size of screen)
+  background-color: #020202;
+
+  .nav-container{
+    //max-width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    .nav-brand{
+      -webkit-box-ordinal-group: 0;
+      -webkit-order: -1;
+      -ms-flex-order: -1;
+      order: -1;
+      position: relative;
+      float: left;
+      text-decoration: none;
+    }
+    
+    .navbar-brand {
+      @include navbar-font;
+      color: #fed136;
+      font-weight: 700;
+      letter-spacing: 0.0625em;
+      margin-left: 2rem;
+  
+      img{
+        height: 5rem;
+      }
+    }
+
+    .social-wrapper{
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1;
+      display: inline;
+      margin-right: 10rem;
+      margin-top: 2rem;
+    }
+
+    .nav-menu{
+      transform: translateX(0px) translateY(0px);
+      float: none;
+      position: relative;
+      display: none;
+
+      .nav-menu-social{
+        display: none;
+      }
+    }
+
+    .navbar-toggler {
+      @include navbar-font;
+      padding: 0.75rem;
+      font-size: 1.4rem;
+      color: #fff;
+      //text-transform: uppercase;
+      border: 0;
+      position: relative;
+      float: right;
+      //padding: 18px;
+      //font-size: 24px;
+      display: none;
+      cursor: pointer;
+      background: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);      
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .navbar-toggler:focus{
+      outline: none;
+    }
+  }
+
+  .justify-content-end{
+    display: none;
+  }
+
+  .rowNav{
+    width: 100%;
+
+    .colNav{
+      display: flex;
+      
+      .navItem{
+        margin: auto;
+      }
+    }
+  }
+  
+  .navbar-nav {
+    .nav-link {
+      @include navbar-font;
+      font-size: 1.5rem;
+      color: #000000;
+      letter-spacing: 0.0625em;
+      
+    }
+
+    .nav-link.active, .nav-link:hover{
+      color: #fed136;
+    }
+  }
+}
+
+@media screen and (min-width:1920px){
+  #mainNav .nav-container .social-wrapper{
+    margin-right: 20rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #mainNav .nav-container .nav-menu{
+    margin-left: 200px!important;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1199px){
+  #mainNav .nav-container  .nav-menu{
+    margin-left: 100px!important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px){
+  #mainNav .nav-container .social-wrapper{
+    margin-right: 7rem;
+  }
+  .nav-menu{
+    margin-left: 60px!important;
+  }
+  #navbarResponsive {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  #mainNav .nav-container {
+    border: none;
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  
+    .navbar-brand {
+      font-size: 1.5em;
+      transition: font-size 0.3s ease-in-out;
+
+      img{
+        // rem is relative to font-size in html (default 1rem = 16px)
+        // em is relative to font-size of element on which it is applied
+        height: 4rem;
+        transition: height 0.3s ease-in-out;
+      }
+    }
+
+    .navbar-toggler{
+      padding: 0px;
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1;
+      display: none;
+    }
+
+    .social-wrapper{
+      margin-right: 3rem;
+    }
+    .navbar-shrink {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #212529;
+
+      .navbar-brand {
+        font-size: 1.25em;
+
+        svg, img{
+          height: 1.5rem;
+        }
+      }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        margin-right: 1rem;
+      }
+      .nav-link:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  #mainNav .nav-container{
+    padding: 0px;
+    .navbar-brand{
+      margin-left: 0rem;
+      img{
+        height: 3rem;
+      }
+    }
+    .social-wrapper{
+      margin-right: 0rem;
+      margin-top: 0rem;
+      order: 0;
+    }
+    .navbar-toggler{
+      display: none;
+    }
+  }
+
+}

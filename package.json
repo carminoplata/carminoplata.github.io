@@ -1,0 +1,54 @@
+{
+  "homepage": "http://carminoplata.github.io/carminoplata.github.io",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Carmine Sacco's Professional Page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development && bundle exec jekyll build && bundle exec jekyll serve ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b published -d _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carminoplata/carminoplata.github.io.git"
+  },
+  "keywords": [
+    "Carmine",
+    "Sacco",
+    "Software",
+    "Engineer",
+    "Startupper",
+    "Innovation",
+    "AI"
+  ],
+  "author": "Carmine Sacco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carminoplata/carminoplata.github.io/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^4.6.0",
+    "css-loader": "^5.2.7",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
+    "html-webpack-plugin": "^5.3.2",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.3",
+    "react-dom": "^17.0.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
